@@ -13,6 +13,10 @@
 		B40F7192284017A900135F86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40F7190284017A900135F86 /* Main.storyboard */; };
 		B40F7194284017AB00135F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B40F7193284017AB00135F86 /* Assets.xcassets */; };
 		B40F7197284017AB00135F86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40F7195284017AB00135F86 /* LaunchScreen.storyboard */; };
+		B40F719F28402AC700135F86 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F719E28402AC600135F86 /* PersonTableViewCell.swift */; };
+		B40F71A128402AEC00135F86 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F71A028402AEC00135F86 /* PersonViewController.swift */; };
+		B40F71A62840305700135F86 /* PeopleModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B40F71A42840305700135F86 /* PeopleModel.xcdatamodeld */; };
+		B40F71A82840312C00135F86 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F71A72840312C00135F86 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B40F7193284017AB00135F86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B40F7196284017AB00135F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B40F7198284017AB00135F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B40F719E28402AC600135F86 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		B40F71A028402AEC00135F86 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		B40F71A52840305700135F86 /* PeopleModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeopleModel.xcdatamodel; sourceTree = "<group>"; };
+		B40F71A72840312C00135F86 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				B40F7193284017AB00135F86 /* Assets.xcassets */,
 				B40F7195284017AB00135F86 /* LaunchScreen.storyboard */,
 				B40F7198284017AB00135F86 /* Info.plist */,
+				B40F719E28402AC600135F86 /* PersonTableViewCell.swift */,
+				B40F71A028402AEC00135F86 /* PersonViewController.swift */,
+				B40F71A42840305700135F86 /* PeopleModel.xcdatamodeld */,
+				B40F71A72840312C00135F86 /* Person.swift */,
 			);
 			path = ceren_yasa_week_2;
 			sourceTree = "<group>";
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B40F71A128402AEC00135F86 /* PersonViewController.swift in Sources */,
 				B40F718F284017A900135F86 /* ViewController.swift in Sources */,
 				B40F718B284017A900135F86 /* AppDelegate.swift in Sources */,
+				B40F71A62840305700135F86 /* PeopleModel.xcdatamodeld in Sources */,
+				B40F719F28402AC700135F86 /* PersonTableViewCell.swift in Sources */,
+				B40F71A82840312C00135F86 /* Person.swift in Sources */,
 				B40F718D284017A900135F86 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +376,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B40F71A42840305700135F86 /* PeopleModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B40F71A52840305700135F86 /* PeopleModel.xcdatamodel */,
+			);
+			currentVersion = B40F71A52840305700135F86 /* PeopleModel.xcdatamodel */;
+			path = PeopleModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B40F717F284017A900135F86 /* Project object */;
 }
