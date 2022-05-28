@@ -7,12 +7,20 @@
 
 import UIKit
 
+protocol PersonCellProtocol: AnyObject{
+    func cellCallPressed(index: Int)
+    func cellMessagePressed(index: Int)
+}
+
 class PersonTableViewCell: UITableViewCell {
     @IBOutlet weak var personImageView: UIImageView!
     
     @IBOutlet weak var personNameLabel: UILabel!
     
     @IBOutlet weak var personPhoneLabel: UILabel!
+    
+    weak var cellDelegate: PersonCellProtocol?
+    var indexPath: IndexPath?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,12 +31,17 @@ class PersonTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
         personImageView.contentMode = .scaleAspectFit;
-        // Configure the view for the selected state
     }
     
     @IBAction func callTapped(_ sender: Any) {
+        if let cellDelegate = cellDelegate, let indexPath = indexPath {
+            cellDelegate.cellCallPressed(index: indexPath.row)
+        }
     }
     
     @IBAction func messageTapped(_ sender: Any) {
+        if let cellDelegate = cellDelegate, let indexPath = indexPath {
+            cellDelegate.cellMessagePressed(index: indexPath.row)
+        }
     }
 }
