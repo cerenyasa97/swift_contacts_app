@@ -19,6 +19,7 @@
 		B4B1AD952841580D00B87848 /* PeopleNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1AD942841580D00B87848 /* PeopleNotification.swift */; };
 		B4D443EB2842364600776410 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D443EA2842364600776410 /* Constants.swift */; };
 		B4D443F1284260BC00776410 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D443F0284260BC00776410 /* DetailViewController.swift */; };
+		B4D444182842DD4700776410 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = B4D444172842DD4700776410 /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		B4B1AD942841580D00B87848 /* PeopleNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleNotification.swift; sourceTree = "<group>"; };
 		B4D443EA2842364600776410 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B4D443F0284260BC00776410 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B4D444172842DD4700776410 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				B4B1AD942841580D00B87848 /* PeopleNotification.swift */,
 				B4D443EA2842364600776410 /* Constants.swift */,
 				B4D443F0284260BC00776410 /* DetailViewController.swift */,
+				B4D444172842DD4700776410 /* Readme.md */,
 			);
 			path = ceren_yasa_week_2;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				B40F7197284017AB00135F86 /* LaunchScreen.storyboard in Resources */,
 				B40F7194284017AB00135F86 /* Assets.xcassets in Resources */,
+				B4D444182842DD4700776410 /* Readme.md in Resources */,
 				B40F7192284017A900135F86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

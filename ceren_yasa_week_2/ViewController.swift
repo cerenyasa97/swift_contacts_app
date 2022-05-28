@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         
         addNavigationBarItem()
         
-        readPeople()
+        fetchPeople()
         
         observeNotification()
     }
@@ -47,7 +47,8 @@ class ViewController: UIViewController {
         navigateToPersonDetail(index: nil)
     }
     
-    @objc func readPeople(){
+    // Fetch people from core data
+    @objc func fetchPeople(){
         do{
             let peopleList = try context.fetch(People.fetchRequest())
             people = []
@@ -63,7 +64,7 @@ class ViewController: UIViewController {
     func observeNotification(){
         let notificationCenter = NotificationCenter.default
         
-        notificationCenter.addObserver(self, selector: #selector(readPeople), name: .personNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(fetchPeople), name: .personNotification, object: nil)
     }
 }
 

@@ -160,7 +160,7 @@ class DetailViewController: UIViewController {
             personPhoneLabel.text = phoneTextField.text
             person?.phone = phoneTextField.text!
         }
-        readPeople()
+        fetchPeople()
         if(isNewRecord){
             person = Person(image: imageURL, name: personNameLabel.text, phone: personPhoneLabel.text)
             savePerson()
@@ -197,7 +197,8 @@ class DetailViewController: UIViewController {
         }
     }
     
-    @objc func readPeople(){
+    // Fetch people from core data
+    @objc func fetchPeople(){
         do{
             people = try context.fetch(People.fetchRequest())
         } catch{
